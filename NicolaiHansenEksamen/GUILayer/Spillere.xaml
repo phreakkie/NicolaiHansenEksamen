@@ -1,0 +1,39 @@
+﻿<Window x:Class="NicolaiHansenEksamen.GUILayer.Spillere"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NicolaiHansenEksamen.GUILayer"
+        mc:Ignorable="d"
+        Title="Spillere" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="RegNewPlayerLbl" Content="Registrer ny spiller:" HorizontalAlignment="Left" Margin="73,112,0,0" VerticalAlignment="Top" Width="117"/>
+        <Label x:Name="RegPlayerNameLbl" Content="Navn:" HorizontalAlignment="Left" Margin="73,143,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="RegPlayerNameTbx" HorizontalAlignment="Left" Margin="204,147,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="RegPLayerSmnNameLbl" Content="Summoner Name:" HorizontalAlignment="Left" Margin="73,170,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="RegPlayerSmnNameTbx" HorizontalAlignment="Left" Margin="204,174,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="RegPlayerPhnLbl" Content="Tlf. Nr.:" HorizontalAlignment="Left" Margin="73,232,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="RegPlayerRankTbx" HorizontalAlignment="Left" Margin="204,205,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="RegPlayerPhnTbx" HorizontalAlignment="Left" Margin="204,236,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="RegPlayerTrnLbl" Content="Turneringstype:" HorizontalAlignment="Left" Margin="73,263,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="RegPlayerTrnTbx" HorizontalAlignment="Left" Margin="204,267,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="RegPlayerTrnTbx_KeyDown"/>
+        <Button x:Name="RegPlayerBtn" Content="Tilføj" HorizontalAlignment="Left" Margin="164,294,0,0" VerticalAlignment="Top" Width="59" Click="RegPlayerBtn_Click"/>
+        <Label x:Name="RegPlayerRankLbl" Content="Rank:" HorizontalAlignment="Left" Margin="73,201,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PlayerInfoLbl" Content="Spiller info:" HorizontalAlignment="Left" Margin="500,112,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PlayerInfoSearchTbx" HorizontalAlignment="Left" Margin="455,147,0,0" Text="Søg på Summoner name" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Height="22" GotFocus="PlayerInfoSearchTbx_GotFocus" KeyDown="PlayerInfoSearchTbx_KeyDown"/>
+        <Button x:Name="PlayerInfoSearchBtn" Content="Søg" HorizontalAlignment="Left" Margin="595,147,0,0" VerticalAlignment="Top" Height="22" Width="32" Click="PlayerInfoSearchBtn_Click"/>
+        <Label x:Name="PlayerIDLbl" Content="ID:" HorizontalAlignment="Left" Margin="419,187,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PlayerDispIDLbl" Content="" HorizontalAlignment="Left" Margin="556,187,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PlayerNameLbl" Content="Navn:" HorizontalAlignment="Left" Margin="419,213,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PlayerDispNameLbl" Content="" HorizontalAlignment="Left" Margin="556,213,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PlayerSmnNameLbl" Content="Summoner Name:" HorizontalAlignment="Left" Margin="419,239,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PlayerDispSmnNameLbl" Content="" HorizontalAlignment="Left" Margin="556,239,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PlayerRankLbl" Content="Rank:" HorizontalAlignment="Left" Margin="419,265,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PlayerDispRankLbl" Content="" HorizontalAlignment="Left" Margin="556,265,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PlayerPhnNmbLbl" Content="Tlf. Nr.:" HorizontalAlignment="Left" Margin="419,291,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PlayerDispPhnNmbLbl" Content="" HorizontalAlignment="Left" Margin="556,291,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PlayerTurnLbl" Content="Turneringstype:" HorizontalAlignment="Left" Margin="419,317,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PlayerDispTurnLbl" Content="" HorizontalAlignment="Left" Margin="556,317,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
